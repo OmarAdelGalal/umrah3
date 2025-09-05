@@ -34,10 +34,10 @@ const Pack2: React.FC = () => {
   return (
     <section className="bg-[#D3F0F7] py-12 px-6 p-10">
       <div className="text-right mb-10">
-        <h2 className="text-3xl font-Tajawal text-[#1E5470] mb-10  h-10 mb-2">
-          العروض الرحلات الداخلية 
+        <h2 className="text-3xl font-Tajawal text-[#1E5470] mb-10 max-sm:mb-20 h-10 mb-2">
+          العروض الرحلات الداخلية
         </h2>
-        <div className="flex flex-row-reverse justify-between items-center mb-4">
+        <div className="flex flex-row-reverse flex-wrap justify-between items-center mb-4">
           <p className="text-[#1E5470] font-Cairo">
             . استمتع بأفضل العروض الداخلية على رحلات العمرة، مع باقات مصممة
             لتلبية جميع احتياجاتك بأسعار مميزة وخدمات شاملة
@@ -48,11 +48,11 @@ const Pack2: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center flex-wrap">
         {packages.map((pkg) => (
           <div
             key={pkg.id}
-            className="bg-white rounded-2xl shadow-lg w-80 p-5 text-center"
+            className="bg-white rounded-2xl shadow-lg w-80 p-5 text-center max-sm:w-full"
           >
             <img
               src={pkg.img}
@@ -79,7 +79,7 @@ const Pack2: React.FC = () => {
               href="#"
               className=" mt-4  text-[#34729C] py-2 px-4 flex items-center justify-center "
             >
-              احجز الان {" "}
+              احجز الان{" "}
               <img
                 src="https://i.postimg.cc/c4pNSCKY/Frame-94.png"
                 alt="Frame-94"

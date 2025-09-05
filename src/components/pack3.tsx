@@ -34,15 +34,15 @@ const Pack3: React.FC = () => {
   return (
     <section className="bg-[#D3F0F7] py-12 px-6 p-10">
       <div className="text-right mb-10">
-        <h2 className="text-3xl font-Tajawal text-[#1E5470] mb-10 h-10 mb-2">
+        <h2 className="text-3xl font-Tajawal text-[#1E5470] sm:mb-10 max-sm:mb-20 h-10 mb-2">
           العروض الرحلات الخارجيه
         </h2>
-        <div className="flex flex-row-reverse justify-between items-center mb-4">
+        <div className="flex flex-row-reverse max- flex-wrap justify-between items-center mb-4">
           <p className="text-[#1E5470]  font-Cairo">
-            . استمتع بأفضل العروض الخارجيه  على رحلات العمرة، مع باقات مصممة
+            . استمتع بأفضل العروض الخارجيه على رحلات العمرة، مع باقات مصممة
             لتلبية جميع احتياجاتك بأسعار مميزة وخدمات شاملة
           </p>
-          <button className="rounded-lg border border-black ml-15 px-6 py-2 transition">
+          <button className="rounded-lg border border-black ml-15 px-6 py-2 max-sm:w-full  transition">
             عرض المزيد
           </button>
         </div>
@@ -52,7 +52,7 @@ const Pack3: React.FC = () => {
         {packages.map((pkg) => (
           <div
             key={pkg.id}
-            className="bg-white rounded-2xl shadow-lg w-80 p-5 text-center"
+            className="bg-white rounded-2xl shadow-lg w-80 p-5 text-center max-sm:w-full"
           >
             <img
               src={pkg.img}
