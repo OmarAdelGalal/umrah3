@@ -34,7 +34,7 @@ const Packages_Section: React.FC = () => {
   return (
     <section className="bg-[#D3F0F7] py-12 px-6 p-10">
       <div className="text-right mb-10">
-        <h2 className="text-3xl font-Tajawal text-[#1E5470] mb-10 max-sm:mb-20  h-10 mb-2">
+        <h2 className="text-3xl font-Tajawal text-[#1E5470] mb-10 max-sm:mb-20  h-10">
           باقات عمره و حج
         </h2>
         <div className="flex flex-row-reverse flex-wrap justify-between items-center mb-4">

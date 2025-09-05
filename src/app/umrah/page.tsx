@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/navbar";
 import Rightsider from "@/components/rightsider";
 import Umrhcard from "@/components/umrhcard";
 function page() {
@@ -11,10 +9,6 @@ function page() {
           <Rightsider />
         </div>
       </div>
-      <main className="flex-1">
-        <Navbar />
-        <Footer />
-      </main>
     </div>
   );
 }
