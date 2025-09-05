@@ -1,5 +1,5 @@
 import React from "react";
-
+import OffersCard from "./offersCard";
 const packages = [
   {
     id: 1,
@@ -50,43 +50,16 @@ const Pack3: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
         {packages.map((pkg) => (
-          <div
+          <OffersCard
             key={pkg.id}
-            className="bg-white rounded-2xl shadow-lg w-80 p-5 text-center max-sm:w-full"
-          >
-            <img
-              src={pkg.img}
-              alt={pkg.title}
-              className="w-full h-48 object-cover rounded-xl mb-4"
-            />
-
-            <span className="flex items-center justify-center text-sm text-[#191919] mb-3">
-              {pkg.duration}
-              <img
-                src={pkg.icon}
-                alt="calendar icon"
-                className="h-4 w-4 ml-1"
-              />
-            </span>
-
-            <h3 className="text-lg font-semibold text-[#191919] mb-2">
-              {pkg.title}
-            </h3>
-            <p className="text-sm text-gray-600 mb-3">{pkg.desc}</p>
-            <p className="text-sm font-medium">{pkg.p}</p>
-
-            <a
-              href="#"
-              className=" mt-4  text-[#34729C] py-2 px-4 flex items-center justify-center "
-            >
-              احجز الان{" "}
-              <img
-                src="https://i.postimg.cc/c4pNSCKY/Frame-94.png"
-                alt="Frame-94"
-                className="flex h-4 w-4 ml-1 items-center justify-center mt-1 "
-              />
-            </a>
-          </div>
+            id={pkg.id}
+            img={pkg.img}
+            title={pkg.title}
+            duration={pkg.duration}
+            icon={pkg.icon}
+            desc={pkg.desc}
+            p={pkg.p}
+          />
         ))}
       </div>
     </section>
