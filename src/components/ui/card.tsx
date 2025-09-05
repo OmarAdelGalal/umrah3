@@ -33,15 +33,9 @@ const Card = ({
       <div className="flex gap-2 p-4 border-t">
         <button
           onClick={onBuy}
-          className="flex-1 bg-teal-600 text-white py-2 px-4 rounded-lg hover:bg-teal-700 transition"
+          className="flex-1 cursor-pointer text-[#34729C]  "
         >
-          Buy now
-        </button>
-        <button
-          onClick={onAddToCart}
-          className="flex-1 bg-gray-100 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-200 transition"
-        >
-          Add to cart
+          احجز الأن
         </button>
       </div>
     </div>

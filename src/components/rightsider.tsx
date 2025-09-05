@@ -8,6 +8,7 @@ const RightSidebar = () => {
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="bg-[#D3F0F7] rounded-2xl w-[320px] p-6 flex flex-col gap-6 shadow-lg sticky top-6 h-fit mt-[25px] right-0"
+      dir="RTL"
     >
       {/* Title */}
       <h3 className="text-center text-lg font-bold text-[#15506B]">

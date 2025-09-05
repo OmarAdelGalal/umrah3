@@ -5,9 +5,11 @@ import Umrhcard from "@/components/umrhcard";
 function page() {
   return (
     <div className="contener  bg-[#D3F0F7] ">
-      <div className="flex gap-10 mt-10 justify-between  ">
+      <div className="flex max-sm:flex-wrap-reverse gap-10 mt-10 justify-between  ">
         <Umrhcard />
-        <Rightsider />
+        <div className="max-sm:w-full max-sm:flex max-sm:justify-center">
+          <Rightsider />
+        </div>
       </div>
       <main className="flex-1">
         <Navbar />
